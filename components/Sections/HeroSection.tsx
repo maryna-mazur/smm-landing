@@ -13,19 +13,19 @@ const bgColor = "#FEFFF5";
 export const HeroSection = () => {
   return (
     <section
-      className="w-full h-full flex flex-col justify-center items-center mt-3 p-4"
+      className="w-full h-full flex flex-col justify-center items-center mt-3 p-4 h-[100dvh]"
       style={{ backgroundColor: bgColor }}
     >
       <h1
         className={`w-full h-[10dvh] pl-[6dvw] text-4xl uppercase font-bold m-0`}
-        style={{ fontFamily: "initial", color: accentColor }}
+        style={{ fontFamily: "initial", color: accentColor, margin: 0 }}
       >
         Надія <br />
         <em>— Грабовська</em>
       </h1>
 
       <p
-        className={`flex justify-end w-full mt-[2dvh] mr-[7dvw] text-wrap ${shantellSans.className}`}
+        className={`flex justify-end w-full h-[4dvh] mt-[2dvh] mr-[7dvw] text-wrap ${shantellSans.className}`}
         style={{ fontWeight: 600, fontSize: "2vh" }}
       >
         SMM-менеджерка | Content Creator | <br />
@@ -38,7 +38,7 @@ export const HeroSection = () => {
         width={600}
         height={720}
         style={{
-          height: "48dvh",
+          height: "45dvh",
           width: "100%",
           objectFit: "cover",
           marginTop: "2vh",
@@ -66,7 +66,7 @@ export const HeroSection = () => {
       <button
         className={`uppercase`}
         style={{
-          marginTop: "2vh",
+          marginTop: "1vh",
           padding: "2.6dvw",
           backgroundColor: accentColor,
           color: bgColor,
