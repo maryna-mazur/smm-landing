@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Shantell_Sans } from "next/font/google";
+import { ContactLink } from "@/components/UI/ContactLink";
 
 const shantellSans = Shantell_Sans({
   weight: ["400", "700"],
@@ -7,26 +8,23 @@ const shantellSans = Shantell_Sans({
   subsets: ["latin"],
 });
 
-const accentColor = "#590401";
-const bgColor = "#FEFFF5";
-
 export const HeroSection = () => {
   return (
     <section
       className="w-full h-full flex flex-col justify-center items-center mt-3 p-4"
-      style={{ backgroundColor: bgColor }}
+      style={{ backgroundColor: "var(--color-bg-primary" }}
     >
       <h1
-        className={`w-full h-[10dvh] pl-[6dvw] text-4xl uppercase font-bold m-0`}
-        style={{ fontFamily: "initial", color: accentColor }}
+        className={`w-full h-[10dvh] pl-[6dvw] uppercase font-bold m-0`}
+        style={{ fontFamily: "initial", color: "var(--color-accent)", fontSize: "4vh" }}
       >
         Надія <br />
         <em>— Грабовська</em>
       </h1>
 
       <p
-        className={`flex justify-end w-full mt-[2dvh] mr-[7dvw] text-wrap ${shantellSans.className}`}
-        style={{ fontWeight: 600, fontSize: "2vh" }}
+        className={`flex justify-end w-full mt-[5px] mr-[7dvw] text-wrap ${shantellSans.className}`}
+        style={{ fontWeight: 600, fontSize: "1.8vh" }}
       >
         SMM-менеджерка | Content Creator | <br />
         UGC проєктів, у яких зміст має значення
@@ -63,17 +61,7 @@ export const HeroSection = () => {
         історію, якій хочеться довіряти — і саме тоді соцмережі працюють на
         бренд
       </p>
-      <button
-        className={`uppercase`}
-        style={{
-          marginTop: "2vh",
-          padding: "2.6dvw",
-          backgroundColor: accentColor,
-          color: bgColor,
-        }}
-      >
-        Звʼязатися зі мною
-      </button>
+      <ContactLink content="Звʼязатися" />
     </section>
   );
 };
