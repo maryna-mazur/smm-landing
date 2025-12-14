@@ -36,7 +36,7 @@ export const HeroSection = () => {
         width={600}
         height={720}
         style={{
-          height: "48dvh",
+          height: "45dvh",
           width: "100%",
           objectFit: "cover",
           marginTop: "2vh",
