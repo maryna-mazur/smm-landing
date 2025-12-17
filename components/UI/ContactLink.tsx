@@ -10,7 +10,7 @@ export const ContactLink = ({ content }: { content: string }) => {
         textDecoration: "none",
       }}
       target="_blank"
-      href="https://www.instagram.com/ms.grabovska/"
+      href="https://t.me/ms_grabovska"
     >
       {content}
     </a>

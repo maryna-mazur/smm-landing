@@ -1,9 +1,11 @@
 import { HeroSection } from "@/components/Sections/HeroSection";
+import { AboutMe } from "@/components/Sections/AboutMe";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between text-gray-700">
+    <main className="flex min-h-screen flex-col text-gray-700">
       <HeroSection />
+      <AboutMe />
     </main>
   );
 }
