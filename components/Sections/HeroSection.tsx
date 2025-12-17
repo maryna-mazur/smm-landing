@@ -1,32 +1,25 @@
 import Image from "next/image";
-import { Shantell_Sans } from "next/font/google";
+import { ContactLink } from "@/components/UI/ContactLink";
+import { shantellSans } from "@/lib/fonts";
 
-const shantellSans = Shantell_Sans({
-  weight: ["400", "700"],
-  variable: "--font-shantell-Sans",
-  subsets: ["latin"],
-});
-
-const accentColor = "#590401";
-const bgColor = "#FEFFF5";
 
 export const HeroSection = () => {
   return (
     <section
-      className="w-full h-full flex flex-col justify-center items-center mt-3 p-4 h-[100dvh]"
-      style={{ backgroundColor: bgColor }}
+      className="w-full min-h-screen flex flex-col items-center mt-[4vh] p-4"
+      style={{ backgroundColor: "var(--color-bg-primary" }}
     >
       <h1
-        className={`w-full h-[10dvh] pl-[6dvw] text-4xl uppercase font-bold m-0`}
-        style={{ fontFamily: "initial", color: accentColor, margin: 0 }}
+        className={`w-full h-[10vh] pl-[6vw] uppercase font-bold m-0`}
+        style={{ fontFamily: "initial", color: "var(--color-accent)", fontSize: "4vh" }}
       >
         Надія <br />
         <em>— Грабовська</em>
       </h1>
 
       <p
-        className={`flex justify-end w-full h-[4dvh] mt-[2dvh] mr-[7dvw] text-wrap ${shantellSans.className}`}
-        style={{ fontWeight: 600, fontSize: "2vh" }}
+        className={`flex justify-end w-full mt-[5px] mr-[7vw] text-wrap ${shantellSans.className}`}
+        style={{ fontWeight: 600, fontSize: "1.8vh" }}
       >
         SMM-менеджерка | Content Creator | <br />
         UGC проєктів, у яких зміст має значення
@@ -38,7 +31,7 @@ export const HeroSection = () => {
         width={600}
         height={720}
         style={{
-          height: "45dvh",
+          height: "50dvh",
           width: "100%",
           objectFit: "cover",
           marginTop: "2vh",
@@ -51,10 +44,10 @@ export const HeroSection = () => {
         style={{
           fontSize: "2vh",
           fontFamily: "inherit",
-          lineHeight: "2.5vh",
+          lineHeight: "2.3vh",
           marginTop: "2vh",
           fontWeight: 500,
-          padding: "0 4dvw",
+          padding: "0 4vw",
         }}
       >
         Я допомагаю брендам звучати справжньо в соціальних мережах. Для мене
@@ -63,17 +56,7 @@ export const HeroSection = () => {
         історію, якій хочеться довіряти — і саме тоді соцмережі працюють на
         бренд
       </p>
-      <button
-        className={`uppercase`}
-        style={{
-          marginTop: "1vh",
-          padding: "2.6dvw",
-          backgroundColor: accentColor,
-          color: bgColor,
-        }}
-      >
-        Звʼязатися зі мною
-      </button>
+      <ContactLink content="Звʼязатися" />
     </section>
   );
 };

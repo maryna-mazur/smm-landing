@@ -1,13 +1,6 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
-
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
-
-
+import { montserrat } from "@/lib/fonts";
 
 export const metadata: Metadata = {
   title: "SMM-менеджерка | Просування в соціальних мережах",
