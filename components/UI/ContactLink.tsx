@@ -1,6 +1,14 @@
-export const ContactLink = ({ content }: { content: string }) => {
+import Link from "next/link";
+
+export const ContactLink = ({
+  content,
+  href,
+}: {
+  content: string;
+  href: string;
+}) => {
   return (
-    <a
+    <Link
       className="uppercase"
       style={{
         marginTop: "2vh",
@@ -10,9 +18,9 @@ export const ContactLink = ({ content }: { content: string }) => {
         textDecoration: "none",
       }}
       target="_blank"
-      href="https://t.me/ms_grabovska"
+      href={href}
     >
       {content}
-    </a>
+    </Link>
   );
 };

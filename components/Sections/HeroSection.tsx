@@ -2,7 +2,6 @@ import Image from "next/image";
 import { ContactLink } from "@/components/UI/ContactLink";
 import { shantellSans } from "@/lib/fonts";
 
-
 export const HeroSection = () => {
   return (
     <section
@@ -11,7 +10,11 @@ export const HeroSection = () => {
     >
       <h1
         className={`w-full h-[10vh] pl-[6vw] uppercase font-bold m-0`}
-        style={{ fontFamily: "initial", color: "var(--color-accent)", fontSize: "4vh" }}
+        style={{
+          fontFamily: "initial",
+          color: "var(--color-accent)",
+          fontSize: "4vh",
+        }}
       >
         Надія <br />
         <em>— Грабовська</em>
@@ -56,7 +59,7 @@ export const HeroSection = () => {
         історію, якій хочеться довіряти — і саме тоді соцмережі працюють на
         бренд
       </p>
-      <ContactLink content="Звʼязатися" />
+      <ContactLink content="Звʼязатися" href="https://t.me/ms_grabovska" />
     </section>
   );
 };
