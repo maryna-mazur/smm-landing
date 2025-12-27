@@ -26,19 +26,26 @@ export const ServiceCard = ({
         >
           {title}
         </h3>
-        <Image
-          src={icon}
-          alt={title}
-          width={140}
-          height={140}
+        <div
+          className="relative w-[32vw] aspect-[4/3]"
           style={{
-            objectFit: "cover",
             position: "absolute",
-            top: "-4vh",
+            top: "-2vh",
             right: isEven ? "-7vw" : "auto",
             left: isEven ? "auto" : "-7vw",
           }}
-        />
+        >
+          <Image
+            src={icon}
+            alt={title}
+            sizes="(max-width: 768px) 90vw, 38vw)"
+            fill
+            priority
+            style={{
+              objectFit: "cover",
+            }}
+          />
+        </div>
       </span>
 
       {detail && (
@@ -52,7 +59,7 @@ export const ServiceCard = ({
 
       <p
         className={`${shantellSans.className} font-semibold text-blue-600 mt-[2vh] text-right pl-[15vw]`}
-        style={{ fontSize: "2.2vh", color: 'var(--color-accent)' }}
+        style={{ fontSize: "2.2vh", color: "var(--color-accent)" }}
       >
         {price}
       </p>

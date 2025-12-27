@@ -5,7 +5,7 @@ import { shantellSans } from "@/lib/fonts";
 export const HeroSection = () => {
   return (
     <section
-      className="w-full min-h-screen flex flex-col items-center mt-[4vh] p-4"
+      className="w-full min-h-screen flex flex-col items-center py-[2vh] px-4"
       style={{ backgroundColor: "var(--color-bg-primary" }}
     >
       <h1

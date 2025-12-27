@@ -16,6 +16,11 @@ export const ContactLink = ({
         backgroundColor: "var(--color-accent)",
         color: "var(--color-bg-primary)",
         textDecoration: "none",
+        borderRadius: "1vw",
+        maxHeight: "30px",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
       }}
       target="_blank"
       href={href}

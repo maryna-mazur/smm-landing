@@ -5,7 +5,7 @@ import Image from "next/image";
 export const AboutMe = () => {
   return (
     <section
-      className={`w-full min-h-screen flex flex-col items-center mt-[4vh] p-4 ${montserrat.className}`}
+      className={`w-full min-h-screen flex flex-col items-center p-4 ${montserrat.className}`}
       style={{
         color: "var(--color-bg-primary)",
         fontSize: "4vh",
@@ -30,51 +30,56 @@ export const AboutMe = () => {
         контент, який має зміст.
       </p>
 
-      <div className="mt-[3vh] grid grid-cols-2 grid-rows-2 mx-auto w-fit place-items-center overflow-hidden">
-        <Image
-          src="/images/photo-2.JPG"
-          alt="photo"
-          width={170}
-          height={210}
-          priority
-          style={{ objectFit: "cover" }}
-        />
+      <div className="mt-[3vh] flex w-full gap-[3vw]">
+        <div className="relative w-[38vw] aspect-[4/3]">
+          <Image
+            src="/images/photo-2.JPG"
+            alt="photo"
+            fill
+            priority
+            sizes="(max-width: 768px) 90vw, 38vw"
+            style={{ objectFit: "cover", objectPosition: "0 -3vh" }}
+          />
+        </div>
 
-        <Image
-          src="/images/lux-fm.JPG"
-          alt="lux fm"
-          width={180}
-          height={150}
-          priority
-          style={{
-            objectFit: "cover",
-            objectPosition: "0 -3vh ",
-          }}
-        />
-        <Image
-          src="/images/photo-5.JPG"
-          alt="photo"
-          width={180}
-          height={150}
-          priority
-          style={{
-            objectFit: "cover",
-            objectPosition: "0 -1vh ",
-          }}
-        />
-
-        <Image
-          src="/images/1+1.JPG"
-          alt="1+1"
-          width={170}
-          height={210}
-          priority
-          style={{
-            objectFit: "cover",
-            objectPosition: "0 0.1vh",
-          }}
-        />
+        <div className="relative w-[57vw] aspect-[4/3]">
+          <Image
+            src="/images/lux-fm.JPG"
+            alt="lux fm"
+            fill
+            priority
+            sizes="(max-width: 768px) 90vw, 57vw"
+            style={{ objectFit: "cover", objectPosition: "0 -3vh" }}
+          />
+        </div>
       </div>
+
+
+      <div className="mt-[1vh] flex w-full gap-[3vw]">
+        <div className="relative w-[57vw] aspect-[4/3]">
+          <Image
+            src="/images/photo-5.JPG"
+            alt="photo"
+            fill
+            priority
+            sizes="(max-width: 768px) 90vw, 57vw"
+            style={{ objectFit: "cover", objectPosition: "0 -1vh" }}
+          />
+        </div>
+
+        <div className="relative w-[38vw] aspect-[4/3]">
+          <Image
+            src="/images/1+1.JPG"
+            alt="1+1"
+            fill
+            priority
+            sizes="(max-width: 768px) 90vw, 38vw"
+            style={{ objectFit: "cover", objectPosition: "0 0.1vh" }}
+          />
+        </div>
+      </div>
+
+
     </section>
   );
 };

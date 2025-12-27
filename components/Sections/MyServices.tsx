@@ -6,9 +6,10 @@ import { servicesData } from "@/data/services";
 export const MyServices = () => {
   return (
     <section
-      className={`w-full min-h-screen flex flex-col items-center mt-[2vh] p-4 ${montserrat.className} overflow-x-hidden`}
+      className={`w-full min-h-screen flex flex-col items-center p-4 ${montserrat.className} overflow-x-hidden`}
       style={{
         color: "var(--color-text-color)",
+        backgroundColor: "var(--color-bg-primary",
         fontSize: "4vh",
       }}
     >
