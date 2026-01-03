@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="ua">
       <body
-        className={`${montserrat.className} antialiased w-[100dvw] h-[100dvh]mt-3 p-4 flex overflow-x-hidden`}
+        className={`${montserrat.className} antialiased w-[100dvw] h-[100dvh]mt-3 flex flex-col justify-center overflow-x-hidden`}
       >
         {children}{" "}
       </body>

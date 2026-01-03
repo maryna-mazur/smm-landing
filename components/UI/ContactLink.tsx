@@ -9,7 +9,7 @@ export const ContactLink = ({
 }) => {
   return (
     <Link
-      className="uppercase"
+      className="uppercase outline-none hover:cursor-pointer hover:opacity-80"
       style={{
         marginTop: "2vh",
         padding: "2.6dvw",
@@ -17,10 +17,12 @@ export const ContactLink = ({
         color: "var(--color-bg-primary)",
         textDecoration: "none",
         borderRadius: "1vw",
-        maxHeight: "30px",
+        height: "10vh",
+        maxHeight: "60px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        fontSize: "2vh",
       }}
       target="_blank"
       href={href}

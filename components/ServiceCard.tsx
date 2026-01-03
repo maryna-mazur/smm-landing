@@ -27,18 +27,19 @@ export const ServiceCard = ({
           {title}
         </h3>
         <div
-          className="relative w-[32vw] aspect-[4/3]"
+          className="relative aspect-[4/3]"
           style={{
+            width: "clamp(100px, 19vw, 200px)",
             position: "absolute",
             top: "-2vh",
-            right: isEven ? "-7vw" : "auto",
-            left: isEven ? "auto" : "-7vw",
+            right: isEven ? "-2vw" : "auto",
+            left: isEven ? "auto" : "-2vw",
           }}
         >
           <Image
             src={icon}
             alt={title}
-            sizes="(max-width: 768px) 90vw, 38vw)"
+            sizes="(max-width: 768px) 40vw, 22vw"
             fill
             priority
             style={{
@@ -50,7 +51,7 @@ export const ServiceCard = ({
 
       {detail && (
         <div
-          className="mt-[3vh] mb-3 whitespace-pre-line text-gray-700"
+          className={`mt-[3vh] mb-3 whitespace-pre-line text-gray-700 ${isEven ? "text-left pr-[5vw]" : "text-right pl-[5vw]"}`}
           style={{ fontSize: "2vh" }}
         >
           {detail}
@@ -58,7 +59,7 @@ export const ServiceCard = ({
       )}
 
       <p
-        className={`${shantellSans.className} font-semibold text-blue-600 mt-[2vh] text-right pl-[15vw]`}
+        className={`${shantellSans.className} font-semibold text-blue-600 mt-[3vh] text-right pl-[15vw]`}
         style={{ fontSize: "2.2vh", color: "var(--color-accent)" }}
       >
         {price}

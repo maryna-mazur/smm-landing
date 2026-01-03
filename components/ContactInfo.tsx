@@ -58,6 +58,7 @@ export const ContactInfo = () => {
 
   return (
     <div
+      id="contacts"
       className="w-full max-w-2xl mx-auto mt-16 pb-[4vh] px-4"
       style={{
         background: "var(--color-accent)",

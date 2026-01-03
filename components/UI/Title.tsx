@@ -1,4 +1,4 @@
-import { comforter } from "@/lib/fonts";
+import { comforter, montserrat } from "@/lib/fonts";
 
 export const Title = ({
   title,
@@ -12,9 +12,8 @@ export const Title = ({
   return (
     <section className="relative mt-[4dvh]">
       <h2
-        className={`w-full uppercase font-bold`}
+        className={`${montserrat.className} w-full uppercase font-bold`}
         style={{
-          fontFamily: "initial",
           color: color,
           fontSize: "4vh",
         }}

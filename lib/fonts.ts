@@ -1,5 +1,9 @@
-import type { Metadata } from "next";
-import { Comforter, Montserrat, Shantell_Sans } from "next/font/google";
+import {
+  Comforter,
+  Montserrat,
+  Shantell_Sans,
+  Libertinus_Math,
+} from "next/font/google";
 
 export const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -15,5 +19,11 @@ export const shantellSans = Shantell_Sans({
 export const comforter = Comforter({
   weight: ["400"],
   variable: "--font-comforter",
+  subsets: ["latin"],
+});
+
+export const libertinusMath = Libertinus_Math({
+  weight: ["400"],
+  variable: "--font-libertinusMath",
   subsets: ["latin"],
 });
