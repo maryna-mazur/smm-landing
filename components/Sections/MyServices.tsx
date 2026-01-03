@@ -24,7 +24,7 @@ export const MyServices = () => {
           color="var(--color-accent)"
         />
 
-        <div className="flex flex-col mt-[5.5vh] p-[3vw] gap-[2vh]">
+        <div className="flex flex-col mt-[2.4rem] p-[3vw] gap-[2vh]">
           {servicesData.map((service, index) => (
             <ServiceCard service={service} key={service.id} index={index} />
           ))}

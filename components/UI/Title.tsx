@@ -22,7 +22,7 @@ export const Title = ({
       </h2>
       <p
         className={`${comforter.className} absolute bottom-[-2.2rem] right-[-1.9rem]`}
-        style={{ color }}
+        style={{ color, fontSize: "2rem" }}
       >
         {subtitle}
       </p>

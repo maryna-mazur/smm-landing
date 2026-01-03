@@ -18,7 +18,7 @@ export const ServiceCard = ({
       className={`border-2 border-gray-200 rounded-[5vw] relative p-[3vw] ${
         isEven ? "ml-0 mr-auto" : "ml-auto mr-0"
       }`}
-      style={{ width: "clamp(200px, 85vw, 650px)" }}
+      style={{ width: "clamp(200px, 90vw, 650px)" }}
     >
       <span className="flex justify-between items-start mb-4">
         <h3
@@ -32,7 +32,7 @@ export const ServiceCard = ({
           style={{
             width: "clamp(100px, 19vw, 200px)",
             position: "absolute",
-            top: "-1.3rem",
+            top: "-1.8rem",
             right: isEven ? "-2vw" : "auto",
             left: isEven ? "auto" : "-2vw",
           }}

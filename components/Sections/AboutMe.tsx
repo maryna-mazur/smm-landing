@@ -6,7 +6,7 @@ export const AboutMe = () => {
   return (
     <section
       id="about-me"
-      className={`w-full min-h-screen flex flex-col items-center p-4 pb-[2vh] ${montserrat.className}`}
+      className={`w-full min-h-screen flex flex-col items-center p-4 pb-[1rem] ${montserrat.className}`}
       style={{
         color: "var(--color-bg-primary)",
         fontSize: "4vh",
