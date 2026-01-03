@@ -73,11 +73,11 @@ export const ContactInfo = () => {
       <section
         className={`flex flex-col items-center justify-center space-y-8 ${montserrat.className}`}
       >
-        <h4 className="text-lg md:text-xl font-medium tracking-wide opacity-80 text-center uppercase">
+        <h4 className={`text-[1rem] font-medium tracking-wide opacity-80 text-center uppercase`}>
           Працюю офіційно — ФОП, ІІІ група
         </h4>
 
-        <div className="flex items-center gap-6 mt-[2vh]">
+        <div className="flex items-center gap-[1rem] mt-[2vh]">
           {socialMedia.map((item) => (
             <Link
               key={item.title}

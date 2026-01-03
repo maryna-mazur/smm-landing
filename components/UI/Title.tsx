@@ -10,18 +10,18 @@ export const Title = ({
   color: string;
 }) => {
   return (
-    <section className="relative mt-[4dvh]">
+    <section className="relative mt-[1.5rem]">
       <h2
         className={`${montserrat.className} w-full uppercase font-bold`}
         style={{
           color: color,
-          fontSize: "4vh",
+          fontSize: "2rem",
         }}
       >
         {title}
       </h2>
       <p
-        className={`${comforter.className} absolute bottom-[-4.5dvh] right-[-9dvw]`}
+        className={`${comforter.className} absolute bottom-[-2.2rem] right-[-1.9rem]`}
         style={{ color }}
       >
         {subtitle}

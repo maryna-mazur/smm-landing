@@ -5,6 +5,10 @@ import { montserrat } from "@/lib/fonts";
 export const metadata: Metadata = {
   title: "SMM-менеджерка | Просування в соціальних мережах",
   description: "Допомагаю брендам звучати справжньо в соціальних мережах",
+  icons: {
+    icon: '/images/icon.PNG',
+    apple: '/images/icon.PNG',
+  },
 };
 
 export default function RootLayout({

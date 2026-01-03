@@ -37,7 +37,7 @@ export const ComingSoon = () => {
 
         <ul
           className="mt-[3vh] list-none"
-          style={{ fontSize: "2.2vh", color: "var(--color-accent" }}
+          style={{ fontSize: "1rem", color: "var(--color-accent" }}
         >
           {text.map((item, i) => (
             <li className="mt-[2vh]" key={item}>

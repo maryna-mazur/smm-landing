@@ -24,3 +24,29 @@ h5,
 h6 {
   font-size: initial;
 }
+
+/* Базовые настройки (Mobile: < 640px) */
+html {
+  font-size: 14px; /* Чуть меньше для узких экранов */
+}
+
+/* Tablet (от 640px до 767px) */
+@media (min-width: 640px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Desktop (от 768px до 1023px) */
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; /* Стандарт */
+  }
+}
+
+/* Large Desktop (от 1024px) */
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px; /* Увеличиваем для комфортного чтения на больших мониторах */
+  }
+}

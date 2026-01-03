@@ -15,7 +15,7 @@ export const AboutMe = () => {
     >
       <div
         className="flex flex-col items-center"
-        style={{ width: "clamp(250px, 90vw, 750px)" }}
+        style={{ width: "clamp(250px, 90vw, 900px)" }}
       >
         <Title
           title="Про мене"
@@ -24,18 +24,21 @@ export const AboutMe = () => {
         />
 
         <p
-          className="px-[7vw] mt-[6vh] text-[1.9vh]/[2.4vh] text-justify"
+          className="px-[7vw] mt-[6vh] text-[1rem]/[1.3rem] text-justify"
           style={{ color: `var(--color-bg-primary)` }}
         >
           Мій шлях розпочався з телебачення, продовжився у великому бізнесі, а з
           початку повномасштабної війни я занурилась у сферу маркетингу та PR.
-          Навчалась контент-менеджменту на{" "}
+          <br/> Навчалась контент-менеджменту на{" "}
           <strong>1+1, Люкс ФМ і в топів українського інфобізнесу</strong>.
           Сьогодні я веду бренди разом із командою в Києві та Черкасах,
           створюючи контент, який має зміст.
         </p>
 
-        <div className="mt-[3vh] flex  justify-between w-full gap-[3vw]">
+        <div
+          className="mt-[3vh] flex justify-between w-full gap-[3vw]"
+          style={{ width: "clamp(250px, 90vw, 655px)" }}
+        >
           <div className="relative w-[38vw] aspect-[4/3]">
             <Image
               src="/images/photo-2.JPG"
@@ -59,7 +62,10 @@ export const AboutMe = () => {
           </div>
         </div>
 
-        <div className="mt-[2vh] flex justify-between w-full gap-[3vw]">
+        <div
+          className="mt-[2vh] flex justify-between w-full gap-[3vw]"
+          style={{ width: "clamp(250px, 90vw, 655px)" }}
+        >
           <div className="relative w-[57vw] aspect-[4/3]">
             <Image
               src="/images/photo-5.JPG"

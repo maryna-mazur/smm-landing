@@ -45,7 +45,7 @@ export const HeroSection = () => {
       case "desktop":
         return "center 60%";
       case "largeDesktop":
-        return "center 35%";
+        return "center 40%";
       default:
         return "center center";
     }
@@ -65,16 +65,16 @@ export const HeroSection = () => {
 
   return (
     <section
-      className="w-full min-h-screen flex flex-col items-center py-[2vh] px-4"
+      className="w-full min-h-screen flex flex-col items-center py-[0.8rem] px-4"
       style={{ backgroundColor: "var(--color-bg-primary)" }}
     >
       {screenSize === "mobile" ? (
         <div className="flex flex-col items-center">
           <h1
-            className={`${libertinusMath.className} w-full h-[10vh] pl-[6vw] uppercase font-bold m-0`}
+            className={`${libertinusMath.className} w-full h-[3.5rem] pl-[6vw] uppercase font-bold m-0`}
             style={{
               color: "var(--color-accent)",
-              fontSize: "4vh",
+              fontSize: "2.2rem",
             }}
           >
             Надія <br />
@@ -82,8 +82,8 @@ export const HeroSection = () => {
           </h1>
 
           <p
-            className={`flex justify-end w-full mt-[5px] mr-[7vw] text-wrap ${montserrat.className}`}
-            style={{ fontWeight: 600, fontSize: "14px" }}
+            className={`flex justify-end w-full mt-[2rem] mr-[7vw] text-wrap ${montserrat.className}`}
+            style={{ fontWeight: 600, fontSize: "0.7rem" }}
           >
             SMM-менеджерка | Content Creator | <br />
             UGC проєктів, у яких зміст має значення
@@ -95,11 +95,11 @@ export const HeroSection = () => {
             width={600}
             height={720}
             style={{
-              height: "50vh",
+              height: "60vh",
               width: "100%",
               objectFit: "cover",
               objectPosition: getImagePosition(),
-              marginTop: "2vh",
+              marginTop: "0.8rem",
             }}
             priority
           />
@@ -107,7 +107,7 @@ export const HeroSection = () => {
           <p
             className={`text-center`}
             style={{
-              fontSize: "17px",
+              fontSize: "1rem",
               fontFamily: "inherit",
               lineHeight: "18px",
               marginTop: "2vh",
@@ -127,8 +127,10 @@ export const HeroSection = () => {
               передавати атмосферу, сенси й людей, які стоять за брендом
             </span>
             . <br />{" "}
-
-            <div className={`mt-[2vh] ${montserrat.className}`} style={{ fontWeight: 600, fontSize: "16px" }}>
+            <div
+              className={`mt-[0.8rem] ${montserrat.className}`}
+              style={{ fontWeight: 600, fontSize: "0.8rem" }}
+            >
               Я бачу кожен проєкт як історію, якій хочеться довіряти — і саме
               тоді соцмережі працюють на бренд
             </div>
@@ -137,12 +139,12 @@ export const HeroSection = () => {
         </div>
       ) : (
         <div className="flex flex-col items-center w-full">
-          <nav className="w-full h-[8vh] flex justify-between items-center px-[4vw]">
+          <nav className="w-full h-[4.2rem] flex justify-between items-center px-[4vw]">
             <h1
-              className={`${libertinusMath.className}h-[8vh] pl-[6vw] uppercase font-bold m-0`}
+              className={`${libertinusMath.className} pl-[6vw] uppercase font-bold m-0`}
               style={{
                 color: "var(--color-accent)",
-                fontSize: `${screenSize === "largeDesktop" ? "3vh" : "2.6vh"}`,
+                fontSize: '1.8rem',
               }}
             >
               Надія <br />
@@ -151,11 +153,11 @@ export const HeroSection = () => {
             <ul
               className="flex justify-evenly items-center gap-[4vw] list-none font-bold"
               style={{
-                fontSize: "2vh",
+                fontSize: `1.1rem`,
               }}
             >
               {navigationItems.map((item) => (
-                <li key={item.id} className="py-[2vh]">
+                <li key={item.id} className="py-[1rem]">
                   <Link
                     href={item.href}
                     onClick={(e) => handleScroll(e, item.href.slice(1))}
@@ -175,13 +177,13 @@ export const HeroSection = () => {
 
           <div className="w-full px-[4vw]">
             <div
-              className="relative mt-[2vh] relative w-full aspect-[5/3] rounded-[3vw] overflow-hidden"
+              className="relative mt-[1rem] relative w-full aspect-[5/3] rounded-[3vw] overflow-hidden"
               style={{
                 height: "65vh",
               }}
             >
               <Image
-                src="/images/photo-3.JPG"
+                src="/images/photo-3.webp"
                 alt="SMM Specialist Profile Photo"
                 fill
                 priority
@@ -193,10 +195,10 @@ export const HeroSection = () => {
               />
 
               <p
-                className={`absolute top-[2vh] right-[2vw] flex justify-end w-full text-wrap ${montserrat.className}`}
+                className={`absolute top-[1rem] left-[40px] flex w-full text-wrap ${montserrat.className}`}
                 style={{
                   fontWeight: 600,
-                  fontSize: `${screenSize === "largeDesktop" ? "1.7vh" : "1.8vh"}`,
+                  fontSize: "1rem",
                 }}
               >
                 SMM-менеджерка | Content Creator | <br />
@@ -208,19 +210,33 @@ export const HeroSection = () => {
           <p
             className={`text-center`}
             style={{
-              fontSize: "2vh",
+              fontSize: "1.2rem",
               fontFamily: "inherit",
-              lineHeight: "2.4vh",
-              marginTop: "2vh",
+              lineHeight: "1.4rem",
+              marginTop: "1rem",
               fontWeight: 400,
               padding: "0 8vw",
             }}
           >
             Я допомагаю брендам звучати справжньо в соціальних мережах. Для мене
-            важливо не просто вести сторінку чи створювати контент, а передавати
-            атмосферу, сенси й людей, які стоять за брендом. Я бачу кожен проєкт
-            як історію, якій хочеться довіряти — і саме тоді соцмережі працюють
-            на бренд
+            важливо не просто вести сторінку чи створювати контент,{" "}
+            <span
+              className={`${libertinusMath.className} uppercase font-bold`}
+              style={{
+                color: "var(--color-accent)",
+                fontStyle: "italic",
+              }}
+            >
+              передавати атмосферу, сенси й людей, які стоять за брендом.
+            </span>{" "}
+            <br />{" "}
+            <div
+              className={`mt-[0.8rem] ${montserrat.className}`}
+              style={{ fontWeight: 600, fontSize: "1.2rem" }}
+            >
+              Я бачу кожен проєкт як історію, якій хочеться довіряти — і саме
+              тоді соцмережі працюють на бренд
+            </div>
           </p>
           <ContactLink content="Звʼязатися" href="https://t.me/ms_grabovska" />
         </div>
