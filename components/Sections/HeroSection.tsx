@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, MouseEvent } from "react";
 import Image from "next/image";
 import { ContactLink } from "@/components/UI/ContactLink";
 import { libertinusMath, montserrat } from "@/lib/fonts";
@@ -51,7 +51,10 @@ export const HeroSection = () => {
     }
   };
 
-  const handleScroll = (e, targetId: string) => {
+  const handleScroll = (
+    e: MouseEvent<HTMLAnchorElement>,
+    targetId: string,
+  ) => {
     e.preventDefault();
 
     const element = document.getElementById(targetId);
@@ -144,7 +147,7 @@ export const HeroSection = () => {
               className={`${libertinusMath.className} pl-[6vw] uppercase font-bold m-0`}
               style={{
                 color: "var(--color-accent)",
-                fontSize: '1.8rem',
+                fontSize: "1.8rem",
               }}
             >
               Надія <br />
